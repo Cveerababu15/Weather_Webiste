@@ -1,0 +1,193 @@
+body{
+    background-image: url("blue-sky-with-clouds.jpg");
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: 'Comfortan', sans-serif;
+    color: white;
+    overflow-y: auto;
+}
+.searchbar{
+    height: 10vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parentdiv{
+    width: 50%;
+    height: fit-content;
+    position: relative;
+
+}
+.inputfeild{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    outline: none;
+}
+.searchicon{
+position: absolute;
+right: 10px;
+top: 5px;
+background-color: black;
+border-radius: 50%;
+text-align: center;
+padding: 5px;
+}
+.searchicon:hover{
+    cursor: pointer;
+
+}
+.maincontent{
+    height: 90vh;
+    flex-direction: row;
+}
+.leftdiv{
+    width: 30%;
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.leftchild{
+    background: rgba(212,212,212,0.4);
+    width: 85%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+.currentemp{
+    font-size: larger;
+}
+#cityname{
+    font-size:xx-large;
+    
+}
+#comimgfivedays{
+    font-size:x-large;
+}
+.rightdiv{
+    width: 70%;
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.rightrow{
+    height:27vh;
+    width: 100%;
+    /* border: 2px solid white; */
+}
+.extrametric{
+    background: rgba(212,212,212,0.4);
+    padding: 5% 2%;
+    width: fit-content;
+    border-radius: 15px;
+    align-items: center;
+}
+.rowtwodiv{
+    background: rgba(212,212,212,0.4);
+    backdrop-filter: blur(15px);
+    width: 45%;
+    height: 85%;
+    border-radius: 15px;
+}
+.todaytemp{
+background: rgba(212,212,212,0.4);;
+width: fit-content;
+padding: 15px;
+border-radius: 15px;
+backdrop-filter: blur(10px);
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+/* MObile Responsive  */
+
+@media only screen and (max-width:767px){
+    .leftdiv{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .rightdiv{
+        width: 100%;
+    }
+    .maincontent{
+        height: 90vh;
+        flex-direction: column;
+    }
+    .searchbar{
+        width: 100%;
+    }
+    .parentdiv{
+        width: 85%;
+        height: fit-content;
+        position: relative;
+    
+    }
+    .rowone {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .rowtwo{
+        flex-direction: column;
+    }
+    .rowtwo{
+        gap: 10px;
+        height: 30vh;
+    }
+    .rowtwodiv{
+        background: rgba(212,212,212,0.4);
+        backdrop-filter: blur(15px);
+        width: 85%;
+        height: 85%;
+        border-radius: 15px;
+        backdrop-filter: blur(20px);
+    }
+    .rightrow{
+        height: auto;
+        width: 1005;
+    }
+    .todaytempparentdiv{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .todaytemp{
+        background: rgba(212,212,212,0.4);
+        width: 30%; /* Change from fit-content to a percentage */
+        padding: 15px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    .rowthree{
+        width: 85%;
+        margin: auto;
+    }
+
+}
+
