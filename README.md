@@ -3,7 +3,7 @@
 A responsive and modern **Weather Report Application** built using **HTML, CSS, JavaScript**, and the **OpenWeatherMap API**.  
 It displays **current weather**, **5-day forecast**, **hourly forecast**, **Air Quality Index (AQI)**, sunrise/sunset times, and additional weather metrics.
 
-![Weather Report App Screenshot](your-image.png)
+![Weather Report App Screenshot](image.png)
 
 ---
 
